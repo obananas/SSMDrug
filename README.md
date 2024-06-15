@@ -1,5 +1,6 @@
 # SSMD
 Drug Recommendation Method Based on Structured Sequence Modelling with Multi-Source Information
+
 This is an implementation of our model SSMD and the baselines in the paper. 
 <hr>
 
