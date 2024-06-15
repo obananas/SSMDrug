@@ -1,6 +1,6 @@
-# DAI-Net
-Dual Adaptive Interaction Network for Coordinated Drug Recommendation  
-This is an implementation of our model DAI-Net and the baselines in the paper. 
+# SSMD
+Drug Recommendation Method Based on Structured Sequence Modelling with Multi-Source Information
+This is an implementation of our model SSMD and the baselines in the paper. 
 <hr>
 
 ## Requirements
@@ -16,14 +16,14 @@ torch-sparse == 0.6.12
 - first, install the [`rdkit`](https://www.rdkit.org/) (RDKit: Open-Source Cheminformatics Software) conda environment.
 
 ```python
-conda create -c conda-forge -n DAI-Net  rdkit
-conda activate DAI-Net
+conda create -c conda-forge -n SSMD rdkit
+conda activate SSMD
 
 # can also use the following in your current env
 pip install rdkit-pypi
 ```
 
-- then, in DAI-Net environment, install the following package
+- then, in SSMD environment, install the following package
 ```python
 pip install scikit-learn, dill, dnc
 ```
@@ -143,7 +143,7 @@ After the processing have been done, we get the following statistics:
 ## Process Data
 The processed data is in the path
 ```python
-\DAI-Net\data
+\SSMD\data
 ```
 You can also process data with
 - MIMIC-III
@@ -157,12 +157,12 @@ python processing_4.py
 ## Run the code
 
 ```python
-python DAI-Net.py
+python SSMD.py
 ```
 
 here is the argument:
 
-    usage: DAI-Net.py [-h] [--Test] [--model_name MODEL_NAME]
+    usage: SSMD.py [-h] [--Test] [--model_name MODEL_NAME]
                    [--resume_path RESUME_PATH] [--lr LR]
                    [--target_ddi TARGET_DDI] [--kp KP] [--dim DIM]
     
